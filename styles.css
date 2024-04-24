@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--main-bg-color, #f4f4f4);
+    color: #333;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+header {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation styles */
+nav {
+    background: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+h1 {
+    color: var(--accent-color, #007BFF);
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Specific section styling */
+section {
+    padding: 20px;
+    border: 2px solid #eee;
+    margin-bottom: 10px;
+}
+
+details {
+    font-style: italic;
+}
+
+summary {
+    font-weight: bold;
+}
+
+
+section {
+    margin: 10px;
+    padding: 20px;
+}
+
+article {
+    margin: 20px 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* CSS Variables and Fallback */
+:root {
+    --main-bg-color: #f4f4f4;
+    --accent-color: #4CAF50;
+}
+
+a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+input[type="radio"]+label {
+    margin-left: 5px;
+}
+
+/* Flexbox settings for responsive layouts */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS Grid for sections */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Using new and advanced selectors */
+:has(> div.highlight) {
+    border: 2px solid var(--accent-color);
+}
+
+/* Pseudo-classes and attribute selectors */
+input:checked+label {
+    font-weight: bold;
+}
+
+[class^="example-"] {
+    background-color: #eef;
+}
