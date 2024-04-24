@@ -45,7 +45,7 @@ nav a {
 
 
 h1 {
-    /* variable usage */
+
     color: var(--accent-color, #007BFF);
     align-items: center;
 }
@@ -83,11 +83,59 @@ article {
 }
 
 footer {
-    display: flex;
+    display: inline;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #f0f0f0;
+}
+
+fieldset {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+legend {
+    padding: 0 10px;
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="radio"],
+input[type="text"],
+textarea {
+    margin: 5px 0 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #333;
 }
 
 
@@ -106,7 +154,7 @@ footer {
     }
 }
 
-/* CSS Variables and Fallback */
+
 :root {
     --main-bg-color: #f4f4f4;
     --accent-color: #4CAF50;
@@ -121,7 +169,6 @@ input[type="radio"]+label {
     margin-left: 5px;
 }
 
-/* Flexbox settings for responsive layouts */
 main {
     display: flex;
     flex-direction: column;
