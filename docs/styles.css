@@ -15,12 +15,12 @@ footer {
 }
 
 header {
-    display: flexbox;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
-/* Navigation styles */
+
 nav {
     background: #007BFF;
     padding: 10px;
@@ -45,6 +45,7 @@ nav a {
 
 
 h1 {
+    /* variable usage */
     color: var(--accent-color, #007BFF);
     align-items: center;
 }
@@ -54,7 +55,7 @@ h2 {
     color: #333;
 }
 
-/* Specific section styling */
+
 section {
     padding: 20px;
     border: 2px solid #eee;
@@ -126,14 +127,13 @@ main {
     flex-direction: column;
 }
 
-/* CSS Grid for sections */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-/* Using new and advanced selectors */
+/* new and advanced selectors */
 :has(> div.highlight) {
     border: 2px solid var(--accent-color);
 }
