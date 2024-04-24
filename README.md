@@ -1,2 +1,2 @@
 # Lab 3
-[Site Link](https://sakshamrai101.github.io/CSE110_Lab2_Starter/)
+[Site Link](https://sakshamrai101.github.io/sp24-cse110-lab3/)
