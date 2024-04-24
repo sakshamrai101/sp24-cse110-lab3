@@ -6,8 +6,8 @@ body {
 }
 
 header,
-main,
-footer {
+main, footer
+{
     padding: 20px;
     margin: 10px;
     background-color: #fff;
@@ -71,24 +71,12 @@ summary {
 }
 
 
-section {
-    margin: 10px;
-    padding: 20px;
-}
-
 article {
     margin: 20px 10px;
     padding: 15px;
     border: 1px solid #ccc;
 }
 
-footer {
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-}
 
 fieldset {
     border: 2px solid #ddd;
